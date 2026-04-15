@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hudson Koenig - Portfolio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            background-color: #1a73e8;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        } 
+        .nav-link {
+            color: white !important;
+            margin-left: 15px;
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #e0e0e0 !important;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 0;
+        }
+        .section-title {
+            color: #1a73e8;
+            font-weight: bold;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #1a73e8;
+            padding-bottom: 10px;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .skill-badge {
+            display: inline-block;
+            background-color: #1a73e8;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9rem;
+        }
+        footer {
+            background-color: #1a73e8;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Hudson Koenig</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="messi.html">Messi Page</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+            <h1>Hudson Koenig</h1>
+            <p style="font-size: 1.3rem; margin-top: 10px;">Aspiring Business Professional | Soccer Enthusiast</p>
+            <p style="font-size: 14px; margin-top: 10px;">Phone: 303-994-3070 | Email: koenight@byu.edu</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h2 class="section-title">About Me</h2>
+                <p>I'm a BYU Pre-Business student with a passion for soccer and professional development. I have experience in customer service and sports officiating, with a commitment to excellence in everything I do.</p>
+                
+                <h2 class="section-title">Quick Overview</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Experience</h5>
+                        <p class="card-text">Customer service experience at Costa Vida as a cashier, combined with refereeing experience managing soccer matches.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Recognition</h5>
+                        <p class="card-text">MVP Soccer Team Award - Recognized for outstanding performance, leadership, and dedication to team success.</p>
+                    </div>
+                </div>
+
+                <h2 class="section-title">Core Skills</h2>
+                <div>
+                    <span class="skill-badge">Customer Service</span>
+                    <span class="skill-badge">Leadership</span>
+                    <span class="skill-badge">Communication</span>
+                    <span class="skill-badge">Team Management</span>
+                    <span class="skill-badge">Problem Solving</span>
+                    <span class="skill-badge">Work Ethic</span>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="background-color: #e3f2fd;">
+                    <div class="card-body">
+                        <h5 class="card-title">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="resume.html" class="btn btn-sm btn-primary btn-block mb-2">View Full Resume</a></li>
+                            <li><a href="messi.html" class="btn btn-sm btn-primary btn-block mb-2">Explore Messi Page</a></li>
+                            <li><a href="messi.html#joke-app" class="btn btn-sm btn-primary btn-block">Try Joke Generator</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Education</h5>
+                        <p class="card-text"><strong>Brigham Young University</strong><br>Pre-Business Program<br>Current Student</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Hudson Koenig All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

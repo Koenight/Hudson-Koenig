@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Lionel Messi is the Best</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav style="background-color: #0066cc; padding: 15px; text-align: center;">
+        <a href="index.html" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Home</a>
+        <a href="resume.html" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Resume</a>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container-messi">
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <h1>Why Lionel Messi is the Best Soccer Player of All Time</h1>
+            <p class="subtitle">An exploration of the legend's achievements and impact on football</p>
+        </div>
+
+        <!-- Messi Image -->
+        <div class="content-section">
+            <img src="../My Website/Images/Messi 1.jpg" alt="Lionel Messi" class="messi-image">
+        </div>
+
+        <!-- Main Content -->
+        <div class="content-section">
+            <h2>The Greatest of All Time</h2>
+
+            <ol>
+                <li><strong>Unmatched Goal-Scoring Record</strong>
+                    <ul>
+                        <li>Over 800 career goals</li>
+                        <li>Multiple Ballon d'Or awards (8)</li>
+                        <li>Consistent performance over 20 years</li>
+                    </ul>
+                </li>
+
+                <li><strong>Exceptional Dribbling Skills</strong>
+                    <ul>
+                        <li>Ability to take on multiple defenders</li>
+                        <li>Incredible ball control and footwork</li>
+                        <li>Creates scoring opportunities from nowhere</li>
+                    </ul>
+                </li>
+
+                <li><strong>World Cup Champion</strong>
+                    <ul>
+                        <li>Led Argentina to 2022 FIFA World Cup victory</li>
+                        <li>MVP performance in tournament</li>
+                        <li>His team couldn't have won without him</li>
+                    </ul>
+                </li>
+
+                <li><strong>Team Player & Leadership</strong>
+                    <ul>
+                        <li>Creates assists for teammates when he has the opportunity to score</li>
+                        <li>Elevates play of those around him</li>
+                        <li>Respected by players worldwide even his rivals</li>
+                    </ul>
+                </li>
+
+                <li><strong>Longevity & Consistency</strong>
+                    <ul>
+                        <li>Performed at elite level for 20+ years</li>
+                        <li>Adapted playing style with age</li>
+                        <li>Maintained excellence across different leagues</li>
+                    </ul>
+                </li>
+
+                <li><strong>Champions League Success</strong>
+                    <ul>
+                        <li>Multiple European titles with Barcelona</li>
+                        <li>Dominant performances in knockout stages</li>
+                        <li>Scored in multiple finals</li>
+                    </ul>
+                </li>
+
+                <li><strong>Left-Footed Mastery</strong>
+                    <ul>
+                        <li>Natural left-foot provides unique advantage</li>
+                        <li>Unpredictable shot angles</li>
+                        <li>Signature free-kick technique</li>
+                    </ul>
+                </li>
+
+                <li><strong>Impact Beyond Statistics</strong>
+                    <ul>
+                        <li>Transformed Barcelona into dynasty</li>
+                        <li>Global ambassador for the sport</li>
+                        <li>Inspired millions of young players</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <!-- YouTube Video -->
+        <div class="content-section">
+            <h2>Messi Highlights</h2>
+            <div class="video-container">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/lidczlSempQ" 
+                    title="Messi Highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Tableau Dashboard -->
+        <div class="content-section">
+            <h2>Messi vs Ronaldo: Career Statistics</h2>
+
+            <div class='tableauPlaceholder' id='viz1717051195112' style='position: relative'>
+                <noscript>
+                    <a href='https://public.tableau.com/views/MessiVSRonaldo_15868177672740/MessiVSRonaldo'>
+                        <img alt='Messi vs Ronaldo'
+                        src='https://public.tableau.com/static/images/Me/MessiVSRonaldo_15868177672740/MessiVSRonaldo/1_rss.png'
+                        style='border: none; width: 100%;' />
+                    </a>
+                </noscript>
+
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https://public.tableau.com/' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='name' value='MessiVSRonaldo_15868177672740/MessiVSRonaldo' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                </object>
+            </div>
+
+            <script>
+                var divElement = document.getElementById('viz1717051195112');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+        </div>
+
+        <!-- Joke Generator -->
+        <div id="joke-app" class="joke-app">
+            <h2>Messi Jokes Generator</h2>
+            <button onclick="generateJoke()">Get Joke</button>
+            <button onclick="clearJoke()">Clear</button>
+            <div id="jokeOutput"></div>
+        </div>
+
+        <!-- Back to Top -->
+        <div style="text-align: center; margin-top: 40px; padding: 20px;">
+            <a href="#top">↑ Back to Top</a>
+        </div>
+
+    </div>
+
+    <script>
+        const jokes = [
+            "Why did Messi never get lost? Because he always knew the right pass!",
+            "What's Messi's favorite type of music? Heavy metal... for the ball control!",
+            "Why don't they teach Messi in schools? Because he's already a legend!",
+            "How does Messi stay in shape? He runs circles around his opponents!",
+            "What's Messi's favorite food? Goal-dfish crackers!",
+            "Why is Messi great at poker? Because he always knows when to pass!",
+            "What did Messi say to his shoes? Let's go win the Cup!",
+            "How many Messis does it take to change a lightbulb? None - he just creates goals in the dark!",
+            "Why don't defenders like playing against Messi? He always has an exit strategy!",
+            "What's Messi's favorite exercise? The slide tackle!"
+        ];
+
+        function generateJoke() {
+            const randomIndex = Math.floor(Math.random() * jokes.length);
+            document.getElementById('jokeOutput').innerHTML = `<p>${jokes[randomIndex]}</p>`;
+        }
+
+        function clearJoke() {
+            document.getElementById('jokeOutput').innerHTML = '';
+        }
+    </script>
+
+</body>
+</html>

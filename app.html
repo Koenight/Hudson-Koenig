@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <style>
+        body {
+            background-color: #f4f7fb;
+            color: #0d3b66;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .game-card {
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(13, 59, 102, 0.15);
+            padding: 32px;
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 16px;
+            font-size: 2rem;
+        }
+        p {
+            margin: 12px 0;
+        }
+        input {
+            width: 80%;
+            padding: 12px 14px;
+            border: 2px solid #0d3b66;
+            border-radius: 8px;
+            font-size: 1rem;
+            margin-bottom: 16px;
+        }
+        button {
+            background-color: #0d3b66;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            margin: 6px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover {
+            background-color: #0a2a4b;
+        }
+        .result {
+            min-height: 36px;
+            font-weight: bold;
+        }
+        .link-row {
+            margin-top: 18px;
+        }
+        .link-row a {
+            color: #0d3b66;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-card">
+        <h1>Guess the Number</h1>
+        <p>Pick a number between 1 and 10. See if you can beat the game.</p>
+        <input type="number" id="guess" min="1" max="10" placeholder="Enter a number" />
+        <div>
+            <button onclick="checkGuess()">Submit</button>
+            <button onclick="resetGame()">Reset</button>
+        </div>
+        <p id="result" class="result"></p>
+        <p class="link-row"><a href="scratch.html">Return to Scratch Page</a></p>
+    </div>
+
+    <script>
+        let number = Math.floor(Math.random() * 10) + 1;
+        let guesses = 0;
+
+        function checkGuess() {
+            const guess = Number(document.getElementById('guess').value);
+            const result = document.getElementById('result');
+            if (!guess || guess < 1 || guess > 10) {
+                result.textContent = 'Please enter a number from 1 to 10.';
+                return;
+            }
+            guesses += 1;
+            if (guess === number) {
+                result.textContent = `Correct! You guessed it in ${guesses} tries.`;
+            } else if (guess < number) {
+                result.textContent = 'Too low. Try again.';
+            } else {
+                result.textContent = 'Too high. Try again.';
+            }
+        }
+
+        function resetGame() {
+            number = Math.floor(Math.random() * 10) + 1;
+            guesses = 0;
+            document.getElementById('guess').value = '';
+            document.getElementById('result').textContent = 'Game reset. Make a new guess!';
+        }
+    </script>
+</body>
+</html>
