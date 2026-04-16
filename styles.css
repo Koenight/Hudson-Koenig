@@ -1,0 +1,196 @@
+/* Custom Stylesheet for Messi Page */
+
+body {
+    background-color: #d3d3d3;
+    color: #0066cc;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.container-messi {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    color: #0066cc;
+    font-family: 'Georgia', serif;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(190, 24, 24, 0.9);
+    border-radius: 8px;
+}
+
+.messi-image-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.messi-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content-section {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+    color: #0066cc;
+    font-family: 'Georgia', serif;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 10px;
+}
+
+.reasons-list {
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+.joke-app {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    margin: 30px 0;
+    text-align: center;
+}
+
+.joke-app button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s;
+}
+
+.joke-app button:hover {
+    background-color: #004999;
+}
+
+.joke-display {
+    background-color: #f0f0f0;
+    color: #0066cc;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    min-height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav-back {
+    display: inline-block;
+    margin: 20px 0;
+}
+
+nav-back a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav-back a:hover {
+    color: #004999;
+    text-decoration: underline;
+}
+
+.top-nav {
+    background-color: #0066cc;
+    padding: 15px;
+    text-align: center;
+}
+
+.top-nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.top-nav a:hover {
+    color: #cfe1ff;
+}
+
+.hero-section {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.95), rgba(0, 77, 153, 0.95));
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    margin: 0;
+    font-size: 2.6rem;
+    line-height: 1.1;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.image-block {
+    text-align: center;
+}
+
+.messi-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.tableau-wrapper {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.top-link {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.top-link a {
+    color: #0066cc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.top-link a:hover {
+    text-decoration: underline;
+}
